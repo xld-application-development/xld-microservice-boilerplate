@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
+    "prepare": "husky install",
     "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/index.js",
     "start:dev": "nodemon",
     "build": "tsc -p .",
     "lint": "eslint --ignore-path .gitignore --ext .ts src/",
     "lint:fix": "npm run lint -- --fix",
+    "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/.bin/typeorm",
     "typeorm:create": "yarn typeorm migration:create",
     "typeorm:generate": "yarn typeorm migration:generate --dataSource src/loaders/dataSource.ts",
