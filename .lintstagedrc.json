@@ -1,0 +1,6 @@
+{
+    "*.ts": [
+        "npm run prettier-format",
+        "npm run lint"
+    ]
+}

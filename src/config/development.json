@@ -1,0 +1,21 @@
+{
+    "server" : {
+      "port": 8000,
+      "env": "development",
+      "cors": {
+        "origin": true,
+        "credentials": true
+      }
+    },
+    "database": {
+      "postgres": {
+        "host": "localhost",
+        "port": 5432,
+        "username": "jaspergabriel",
+        "password": "",
+        "database": "db_name",
+        "synchronize": false,
+        "logging": false
+      }
+    }
+}

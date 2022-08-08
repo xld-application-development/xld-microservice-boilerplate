@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    // "moduleResolution": "Node",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": "src",
+    "paths": {
+        "@controllers/*": ["controllers/*"],
+        "@database/*": ["database/*"],
+        "@middlewares/*": ["middlewares/*"],
+        "@models/*": ["models/*"],
+        "@loaders/*": ["loaders/*"],
+        "@services/*": ["services/*"],
+        "@utils": ["utils"],
+        "@xld-data/*": ["../xld-data/*"]
+    }
+  },
+  // "ts-node": {
+  //     "esm": true
+  // },
+  // "include": ["src/**/*.ts"],
+  // "exclude": ["node_modules", "tests"]
+}
