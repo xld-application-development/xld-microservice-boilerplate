@@ -1,4 +1,4 @@
-export const snakeCase = string => {
+export const snakeCase = (string: string) => {
   return string
     .replace(/\d+/g, ' ')
     .split(/ |\B(?=[A-Z])/)

@@ -1,4 +1,4 @@
-export const success = (data, message = 'no custom message provided') => {
+export const success = (data: any, message = 'no custom message provided') => {
   const response = {
     success: true,
     message: message,

@@ -15,8 +15,8 @@ export class Biller {
   created: Date;
 
   @Column({ type: 'timestamp', nullable: true })
-  updated: Date;
+  updated?: Date;
 
   @Column({ type: 'timestamp', nullable: true })
-  deleted: Date;
+  deleted?: Date;
 }

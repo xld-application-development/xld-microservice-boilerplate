@@ -6,16 +6,16 @@ const billers: Biller[] = [
     name: 'Biller 1',
     tag: 'BILLER_1',
     created: new Date(),
-    updated: null,
-    deleted: null,
+    // updated: null,
+    // deleted: null,
   },
   {
     id: 2,
     name: 'Biller 2',
     tag: 'BILLER_2',
     created: new Date(),
-    updated: null,
-    deleted: null,
+    // updated: null,
+    // deleted: null,
   },
 ];
 
