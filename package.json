@@ -1,13 +1,13 @@
 {
-  "name": "payment-partners-microservice",
+  "name": "xld-microservice-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "scripts": {
     "prepare": "husky install",
-    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/index.js",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/src/index.js",
     "start:dev": "nodemon",
-    "build": "tsc -p .",
+    "build": "rm -rf dist && tsc && tsc-alias",
     "lint": "eslint --ignore-path .gitignore --ext .ts src/",
     "lint:fix": "npm run lint -- --fix",
     "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
@@ -51,6 +51,7 @@
     "nodemon": "^2.0.19",
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",
+    "tsc-alias": "^1.7.0",
     "tsconfig-paths": "^4.0.0",
     "typescript": "^4.7.4"
   }

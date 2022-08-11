@@ -1,4 +1,4 @@
-import { AppDataSource } from '../../../loaders/startup';
+import { AppDataSource } from '@loaders/dataSource';
 import { Biller } from '@models/08-2022';
 
 export const findAll = async () => {

@@ -17,8 +17,5 @@ export const initializeDatabase = () => {
     .then(async () => {
       logger.info('initialize database');
     })
-    .catch(error => logger.log(error));
+    .catch(exception => logger.error(exception));
 };
-
-// refactor AppDataSource imports away from startup.ts
-export { AppDataSource };
